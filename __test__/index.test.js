@@ -1,7 +1,5 @@
-import {func} from "../index";
-// что функция делает
-describe('GetElement', () => {
-    //третий аргумент встречается раньше чем первый,
+import {findFirstAvailableLastIndex as func } from "../index";
+describe('findFirstAvailableLastIndex', () => {
         it('1', () => {
             expect(func('абвгде', 'д', 'e')).toBe(4);
         })
