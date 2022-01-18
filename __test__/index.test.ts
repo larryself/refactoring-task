@@ -37,5 +37,8 @@ describe('findFirstAvailableLastIndex', () => {
         it('первый искомый элемент из несколькимх символом , второй из одного символа', () => {
             expect(func('hello,world', 'llo', 'w')).toBe(6);
         })
+        it('первый искомый элемент из несколькимх символом', () => {
+            expect(func('hello,world', 'w','e','h')).toBe(6);
+        })
     }
 )
